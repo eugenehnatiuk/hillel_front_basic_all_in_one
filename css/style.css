@@ -20,55 +20,71 @@ p {
   text-align: justify;
   margin: 0;
 }
-/* ______________ MAIN ______________________ */
 
-.hiden {
-  overflow: hidden;
-}
-.middle {
-  vertical-align: middle;
-}
+.background1 {
+	background: #00ffff;
+ }
+ 
+ .background2 {
+	background: #adff2f;
+ }
+ .background3 {
+	background: #ff8c00;
+ }
+
+ .hiden {
+	overflow: hidden;
+ }
+
+ .middle {
+	vertical-align: middle;
+ }
+
+ .fs35 {
+	font-size: 35px;
+ }
+
+ .w400_h400 {
+	width: 400px;
+	height: 400px;
+ }
+ 
+ .w800_h200 {
+	width: 800px;
+	height: 200px;
+ }
+ 
+ .w400_h133 {
+	width: 400px;
+	height: calc(400px / 3);
+ }
+ .w400_h200 {
+	width: 400px;
+	height: 200px;
+ }
+ .w400_h100 {
+	width: 400px;
+	height: 100px;
+ }
+
+/* ______________ Inline_Block ______________________ */
 
 .fs0 {
   font-size: 0px;
 }
-.fs35 {
-  font-size: 35px;
-}
+
 .inline_block {
   display: inline-block;
 }
 
-.w400_h400 {
-  width: 400px;
-  height: 400px;
-}
+/* ______________ Float ______________________ */
 
-.w800_h200 {
-  width: 800px;
-  height: 200px;
-}
-
-.w400_h133 {
-  width: 400px;
-  height: calc(400px / 3);
-}
-.w400_h200 {
-  width: 400px;
-  height: 200px;
-}
-.w400_h100 {
-  width: 400px;
-  height: 100px;
-}
-
-.background1 {
-  background: #00ffff;
-}
-
-.background2 {
-  background: #adff2f;
-}
-.background3 {
-  background: #ff8c00;
-}
+.clear::after {
+	content: "";
+	display: block;
+	clear: both;
+ }
+ 
+ .float{
+	float: left;
+ }
