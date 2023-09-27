@@ -1,11 +1,11 @@
 @import url(common.css);
 
 /* ______________ GLOBAL______________________ */
-.mondrian {
-  background-color: #feedd9;
-}
-.sq_conteiner {
+.conteiner {
   width: 1200px;
+}
+
+.p_middle {
   margin: 0 auto;
 }
 
@@ -16,64 +16,101 @@
 .outline {
   outline: 3px solid red;
 }
+
 .paragraph {
   text-align: justify;
   margin: 0;
 }
 
 .background1 {
-	background: #00ffff;
- }
- 
- .background2 {
-	background: #adff2f;
- }
- .background3 {
-	background: #ff8c00;
- }
+  background: #00ffff;
+}
 
- .hiden {
-	overflow: hidden;
- }
+.background2 {
+  background: #adff2f;
+}
+.background3 {
+  background: #ff8c00;
+}
 
- .middle {
-	vertical-align: middle;
- }
+.background4 {
+  background-color: #feedd9;
+}
 
- .fs35 {
-	font-size: 35px;
- }
+.background5 {
+  background: #eee7e7;
+}
 
- .w400_h400 {
-	width: 400px;
-	height: 400px;
- }
- 
- .w800_h200 {
-	width: 800px;
-	height: 200px;
- }
- 
- .w400_h133 {
-	width: 400px;
-	height: calc(400px / 3);
- }
- .w400_h200 {
-	width: 400px;
-	height: 200px;
- }
- .w400_h100 {
-	width: 400px;
-	height: 100px;
- }
+.background6 {
+  background: #cac8c8;
+}
 
-/* ______________ Table ______________________  */
+.hiden {
+  overflow: hidden;
+}
 
-/* ______________ Inline_Block ______________________ */
+.middle {
+  vertical-align: middle;
+}
+
+.text_center {
+  text-align: center;
+}
 
 .fs0 {
-  font-size: 0px;
+	font-size: 0px;
+ }
+
+.fs35 {
+  font-size: 35px;
 }
+
+.w400_h400 {
+  width: 400px;
+  height: 400px;
+}
+
+.w800_h200 {
+  width: 800px;
+  height: 200px;
+}
+
+.w400_h133 {
+  width: 400px;
+  height: calc(400px / 3);
+}
+.w400_h200 {
+  width: 400px;
+  height: 200px;
+}
+.w400_h100 {
+  width: 400px;
+  height: 100px;
+}
+
+.h50 {
+  height: 50px;
+}
+
+.w50 {
+  width: 50px;
+}
+
+.w100 {
+  width: 100px;
+}
+
+
+/* ______________ Table ______________________  */
+.table {
+  border: 2px solid black;
+}
+
+.text_bold {
+  font-weight: bold;
+}
+
+/* ______________ Inline_Block ______________________ */
 
 .inline_block {
   display: inline-block;
@@ -82,18 +119,17 @@
 /* ______________ Float ______________________ */
 
 .clearfix::after {
-	content: "";
-	display: block;
-	clear: both;
- }
+  content: "";
+  display: block;
+  clear: both;
+}
 
- .float{
-	float: left;
- }
+.float {
+  float: left;
+}
 
- /* ______________ Flex ______________________ */
+/* ______________ Flex ______________________ */
 
- .flex{
-	display: flex;
- }
- 
+.flex {
+  display: flex;
+}
