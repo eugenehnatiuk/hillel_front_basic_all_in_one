@@ -1,10 +1,10 @@
 @import url(common.css);
 
 /* ______________ GLOBAL______________________ */
-body {
+.mondrian {
   background-color: #feedd9;
 }
-.conteiner {
+.sq_conteiner {
   width: 1200px;
   margin: 0 auto;
 }
@@ -13,10 +13,10 @@ body {
   padding: 20px 0px 20px 0px;
 }
 
-div {
+.outline {
   outline: 3px solid red;
 }
-p {
+.paragraph {
   text-align: justify;
   margin: 0;
 }
@@ -79,12 +79,19 @@ p {
 
 /* ______________ Float ______________________ */
 
-.clear::after {
+.clearfix::after {
 	content: "";
 	display: block;
 	clear: both;
  }
- 
+
  .float{
 	float: left;
  }
+
+ /* ______________ Flex ______________________ */
+
+ .flex{
+	display: flex;
+ }
+ 
