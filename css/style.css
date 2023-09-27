@@ -1,0 +1,74 @@
+@import url(common.css);
+
+/* ______________ GLOBAL______________________ */
+body {
+  background-color: #feedd9;
+}
+.conteiner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.top {
+  padding: 20px 0px 20px 0px;
+}
+
+div {
+  outline: 3px solid red;
+}
+p {
+  text-align: justify;
+  margin: 0;
+}
+/* ______________ MAIN ______________________ */
+
+.hiden {
+  overflow: hidden;
+}
+.middle {
+  vertical-align: middle;
+}
+
+.fs0 {
+  font-size: 0px;
+}
+.fs35 {
+  font-size: 35px;
+}
+.inline_block {
+  display: inline-block;
+}
+
+.w400_h400 {
+  width: 400px;
+  height: 400px;
+}
+
+.w800_h200 {
+  width: 800px;
+  height: 200px;
+}
+
+.w400_h133 {
+  width: 400px;
+  height: calc(400px / 3);
+}
+.w400_h200 {
+  width: 400px;
+  height: 200px;
+}
+.w400_h100 {
+  width: 400px;
+  height: 100px;
+}
+
+.background1 {
+  background: #00ffff;
+}
+
+.background2 {
+  background: #adff2f;
+}
+.background3 {
+  background: #ff8c00;
+}
