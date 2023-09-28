@@ -2,43 +2,154 @@
 
 /* FONTS */
 @font-face {
-	font-family: 'Star Jedi';
-	src: url('../fonts/StarJedi.woff2') format('woff2');
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
+  font-family: "Star Jedi";
+  src: url("../fonts/StarJedi.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: 'Roboto Condensed';
-	src: url('../fonts/RobotoCondensed-Bold.woff2') format('woff2');
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: 'Roboto Condensed';
-	src: url('../fonts/RobotoCondensed-BoldItalic.woff2') format('woff2');
-	font-weight: 700;
-	font-style: italic;
-	font-display: swap;
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: 'Roboto Condensed';
-	src: url('../fonts/RobotoCondensed-Regular.woff2') format('woff2');
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
+
+/* ______________ MAIN PAGE______________________ */
+.main_body {
+  /* background: #373e98; */
+  background: linear-gradient(180deg, #373e98 31%, #00d4ff 100%);
+  width: 100vw;
+  height: 100vh;
+}
+
+.mp_header {
+  /* background: #373e98; */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+header::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid white;
+}
+
+.logo_box {
+  background: white;
+  border-radius: 10px 10px 10px 0px;
+  color: #373e98;
+}
+
+.logo {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  font-size: 35px;
+  padding: 10px;
+}
+
+.mp_nav_list,
+.my_social {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.nav_item,
+.mp_nav_list_2,
+.mp_nav_list_3 {
+  outline: 1px solid white;
+  border-radius: 6px;
+  background: #373e98;
+}
+.nav_item a,
+.my_social_item a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 15px 10px;
+}
+
+.my_social_item a {
+  padding: 0;
+  line-height: 10px;
+}
+
+.home_work,
+.layouts {
+  position: relative;
+}
+
+.home_work ul,
+.layouts ul {
+  position: absolute;
+  text-wrap: nowrap;
+  line-height: 10px;
+}
+.home_work ul {
+  top: 100%;
+  left: 0;
+}
+
+.layouts ul {
+  top: 0;
+  left: 0;
+}
+
+.mp_nav_list_3 {
+  margin-left: -60px;
+}
+
+
+.mp_nav_list_2,
+.mp_nav_list_3 {
+	display: none;
+ }
+
+ .home_work:hover .mp_nav_list_2 {
+	display: block;
+} 
+
+.layouts:hover ul{
+	display: block;
+} 
+
+
 
 
 /* ______________ GLOBAL______________________ */
 .conteiner {
   width: 1200px;
 }
-
+.p15_15 {
+  padding: 15px 15px;
+}
 .p_middle {
   margin: 0 auto;
 }
@@ -56,12 +167,12 @@
 }
 
 .text_center {
-	text-align: center;
- }
+  text-align: center;
+}
 
- .text_bold {
-	font-weight: bold;
- }
+.text_bold {
+  font-weight: bold;
+}
 
 .background1 {
   background: #00ffff;
@@ -95,19 +206,23 @@
 }
 
 .table {
-	border: 2px solid black;
- }
+  border: 2px solid black;
+}
 
- .m_top{
-	margin-top: 20px;
- }
+.m_top {
+  margin-top: 20px;
+}
 
 .fs0 {
-	font-size: 0px;
- }
+  font-size: 0px;
+}
 
 .fs35 {
   font-size: 35px;
+}
+
+.h_400 {
+  height: 400px;
 }
 
 .w400_h400 {
@@ -145,7 +260,6 @@
   width: 100px;
 }
 
-
 /* ______________ Inline_Block ______________________ */
 
 .inline_block {
@@ -170,259 +284,255 @@
   display: flex;
 }
 
-
 /* ______________ Gallery (No common) ______________________ */
 
 /* ______________ Gallery intro ______________________ */
 
-.gl_conteiner{
-	width: 1110px;
-	margin: 0 auto;
-	padding: 0 15px;
-	/* border: 1px solid black; */
+.gl_conteiner {
+  width: 1110px;
+  margin: 0 auto;
+  padding: 0 15px;
+  /* border: 1px solid black; */
 }
 
 .gallery_intro {
-	font-family: "Bebas Neue";
-	font-size: 25px;
-	font-weight: 400;
-	position: relative;
- }
- 
- .video {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
- }
- 
- .intro {
-	display: flex;
-	flex-direction: column;
-	height: 100vh;
-	justify-content: center;
-	align-items: center;
- }
- 
- .img {
-	margin-bottom: 40px;
- }
- 
- .separator,
- .side_name {
-	display: inline-block;
-	vertical-align: middle;
-	text-decoration: none;
-	color: white;
- }
- 
- .separator {
-	padding: 0 15px 0 15px;
- }
- 
- .light:hover {
-	transition-delay: 0.2s;
-	color: hwb(193 9% 0%);
-	transform: scale(1.1);
-	text-shadow: 0px 0px 10px #15eaf8, 0px 0px 25px #15eaf8, 0px 0px 50px #15eaf8;
- }
- 
- .dark:hover {
-	transition-delay: 0.2s;
-	color: #bc2323;
-	transform: scale(1.1);
-	text-shadow: 0px 0px 10px #f20808, 0px 0px 25px #f20808, 0px 0px 50px #f20808;
- }
+  font-family: "Bebas Neue";
+  font-size: 25px;
+  font-weight: 400;
+  position: relative;
+}
 
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
- /* ______________ Gallery Side ______________________ */
+.intro {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
 
- .light_side {
-	background-image: url(../img/Backgrouds/background_2.jpg);
-	position: relative;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
- }
- .dark_side {
-	background-image: url(../img/Backgrouds/background_3.jpg);
-	position: relative;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
- }
- .blackout::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
-	z-index: -1;
- }
- 
- /* _______________ Header _______________ */
- .header {
-	background: rgba(0, 0, 0);
-	height: 100px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 100;
- 
- }
+.img {
+  margin-bottom: 40px;
+}
 
- main{
-	 padding-top: 100px;
- }
- 
- .header p {
-	 text-align: center;
-	 font-family: "Star Jedi";
-	 font-size: 45px;
-	 line-height: 100px;
- }
- .blue_mode {
-	text-shadow: 0px 0px 10px #15eaf8, 0px 0px 25px #15eaf8, 0px 0px 50px #15eaf8;
- 
- }
- .red_mode {
-	text-shadow: 0px 0px 10px #f20808, 0px 0px 25px #f20808, 0px 0px 50px #f20808;
- }
- 
- header p a {
-	display: inline-block;
-	text-decoration: none;
-	color: white;
-	line-height: 0;
- }
- 
- /* _______________ Cards _______________ */
- .cards {
-	background: rgba(0, 0, 0, 0.2);
-	padding: 50px;
- }
- 
- .card {
-	display: flex;
-	gap: 30px;
-	align-items: center;
-	margin-bottom: 80px;
- }
- .card > img {
-	object-fit: cover;
-	flex: 0 0 297px;
- }
- .card_content {
-	flex-grow: 1;
- }
- .title {
-	font-family: "Star Jedi";
-	font-size: 47px;
-	text-align: center;
-	color: #ffe81f;
- }
- 
- .content {
-	font-family: "Roboto Condensed";
-	font-size: 22px;
-	font-weight: 700;
-	font-style: normal;
-	text-align: justify;
-	color: #ffe81f;
-	display: none;
-	overflow-y: hidden;
- }
- 
- .content p:first-child {
-	padding-bottom: 20px;
- }
- .content p:nth-child(2) {
-	font-weight: normal;
-	font-style: italic;
- }
- 
- .content p a {
-	text-decoration: none;
-	color: blue;
- }
- 
- .card:hover .card_content .title {
-	display: none;
- }
- 
- .card:hover .card_content .content {
-	display: block;
- }
- 
- /* _______________ Chart List _______________ */
- .chart {
-	position: fixed;
-	top: 50%;
-	margin-top: -136px;
-	left: -120px;
-	z-index: 101;
- }
- 
- .chart_list {
-	position: relative;
-	border-radius: 0px 6px 6px 0px;
-	width: 120px;
-	padding: 15px 10px 15px 10px;
-	background-color: #4b484866;
-	font-family: "Roboto Condensed";
-	font-size: 18px;
-	font-weight: 700;
-	font-style: normal;
- }
- 
- .chart ul > li {
-	padding-bottom: 10px;
-	color: rgb(255, 232, 31);
-	text-align: center;
- }
- .chart ul > li:last-child {
-	padding-bottom: 0;
- }
- 
- .chart ul > li a {
-	text-decoration: none;
-	color: inherit;
- }
- 
- .chart img {
-	position: absolute;
-	top: 38%;
-	left: 92%;
- }
- 
- .chart:hover {
-	left: 0;
-	transition: 1s;
- }
- /* Footer */
- .footer {
-	background: rgb(4, 4, 4);
- }
- 
- .social {
-	padding: 25px 0px;
-	text-align: center;
- }
- 
- .item {
-	display: inline-block;
-	line-height: 10px;
-	width: 49px;
-	height: 48px;
- }
- 
- .item:active {
-	outline: 1px solid white;
-	border-radius: 50px;
- }
+.separator,
+.side_name {
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  color: white;
+}
+
+.separator {
+  padding: 0 15px 0 15px;
+}
+
+.light:hover {
+  transition-delay: 0.2s;
+  color: hwb(193 9% 0%);
+  transform: scale(1.1);
+  text-shadow: 0px 0px 10px #15eaf8, 0px 0px 25px #15eaf8, 0px 0px 50px #15eaf8;
+}
+
+.dark:hover {
+  transition-delay: 0.2s;
+  color: #bc2323;
+  transform: scale(1.1);
+  text-shadow: 0px 0px 10px #f20808, 0px 0px 25px #f20808, 0px 0px 50px #f20808;
+}
+
+/* ______________ Gallery Side ______________________ */
+
+.light_side {
+  background: url(../img/Backgrouds/background_2.webp) no-repeat 50% / cover fixed;
+  position: relative;
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+}
+.dark_side {
+  background: url(../img/Backgrouds/background_3.webp) no-repeat 50% / cover fixed;
+  position: relative;
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+}
+.blackout::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+/* _______________ Header _______________ */
+.header {
+  background: rgba(0, 0, 0);
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+main {
+  padding-top: 100px;
+}
+
+.header p {
+  text-align: center;
+  font-family: "Star Jedi";
+  font-size: 45px;
+  line-height: 100px;
+}
+.blue_mode {
+  text-shadow: 0px 0px 10px #15eaf8, 0px 0px 25px #15eaf8, 0px 0px 50px #15eaf8;
+}
+.red_mode {
+  text-shadow: 0px 0px 10px #f20808, 0px 0px 25px #f20808, 0px 0px 50px #f20808;
+}
+
+header p a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  line-height: 0;
+}
+
+/* _______________ Cards _______________ */
+.cards {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 50px;
+}
+
+.card {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.card > img {
+  object-fit: cover;
+  flex: 0 0 297px;
+}
+.card_content {
+  flex-grow: 1;
+}
+.title {
+  font-family: "Star Jedi";
+  font-size: 47px;
+  text-align: center;
+  color: #ffe81f;
+}
+
+.content {
+  font-family: "Roboto Condensed";
+  font-size: 22px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: justify;
+  color: #ffe81f;
+  display: none;
+  overflow-y: hidden;
+}
+
+.content p:first-child {
+  padding-bottom: 20px;
+}
+.content p:nth-child(2) {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.content p a {
+  text-decoration: none;
+  color: blue;
+}
+
+.card:hover .card_content .title {
+  display: none;
+}
+
+.card:hover .card_content .content {
+  display: block;
+}
+
+/* _______________ Chart List _______________ */
+.chart {
+  position: fixed;
+  top: 50%;
+  margin-top: -136px;
+  left: -120px;
+  z-index: 101;
+}
+
+.chart_list {
+  position: relative;
+  border-radius: 0px 6px 6px 0px;
+  width: 120px;
+  padding: 15px 10px 15px 10px;
+  background-color: #4b484866;
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.chart ul > li {
+  padding-bottom: 10px;
+  color: rgb(255, 232, 31);
+  text-align: center;
+}
+.chart ul > li:last-child {
+  padding-bottom: 0;
+}
+
+.chart ul > li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.chart img {
+  position: absolute;
+  top: 38%;
+  left: 92%;
+}
+
+.chart:hover {
+  left: 0;
+  transition: 1s;
+}
+/* Footer */
+.footer {
+  background: rgb(4, 4, 4);
+}
+
+.social {
+  padding: 25px 0px;
+  text-align: center;
+}
+
+.item {
+  display: inline-block;
+  line-height: 10px;
+  width: 49px;
+  height: 48px;
+}
+
+.item:active {
+  outline: 1px solid white;
+  border-radius: 50px;
+}
