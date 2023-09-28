@@ -35,14 +35,12 @@
 
 /* ______________ MAIN PAGE______________________ */
 .main_body {
-  /* background: #373e98; */
   background: linear-gradient(180deg, #373e98 31%, #00d4ff 100%);
   width: 100vw;
   height: 100vh;
 }
 
 .mp_header {
-  /* background: #373e98; */
   color: white;
   display: flex;
   justify-content: space-between;
@@ -75,12 +73,14 @@ header::after {
 }
 
 .mp_nav_list,
-.my_social {
+.my_social_list {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   justify-content: center;
   align-items: center;
+  color: white;
 }
+
 .nav_item,
 .mp_nav_list_2,
 .mp_nav_list_3 {
@@ -92,7 +92,7 @@ header::after {
 .my_social_item a {
   display: inline-block;
   text-decoration: none;
-  color: white;
+  color: inherit;
   padding: 15px 10px;
 }
 
@@ -126,22 +126,18 @@ header::after {
   margin-left: -60px;
 }
 
-
 .mp_nav_list_2,
 .mp_nav_list_3 {
-	display: none;
- }
+  display: none;
+}
 
- .home_work:hover .mp_nav_list_2 {
-	display: block;
-} 
+.home_work:hover .mp_nav_list_2 {
+  display: block;
+}
 
-.layouts:hover ul{
-	display: block;
-} 
-
-
-
+.layouts:hover ul {
+  display: block;
+}
 
 /* ______________ GLOBAL______________________ */
 .conteiner {
