@@ -59,15 +59,10 @@ header::after {
   border-bottom: 1px solid white;
 }
 
-.logo_box {
+.logo {
   background: white;
   border-radius: 10px 10px 10px 0px;
   color: #373e98;
-}
-
-.logo {
-  display: inline-block;
-  color: inherit;
   text-decoration: none;
   font-size: 35px;
   padding: 10px;
@@ -83,7 +78,7 @@ header::after {
 }
 
 .my_social_list {
-  gap: 0;
+  gap: 10px;
 }
 
 .nav_item,
@@ -97,18 +92,10 @@ header::after {
 }
 .nav_item a,
 .my_social_item a {
-  display: inline-block;
+  display: block;
   text-decoration: none;
   color: inherit;
   padding: 15px 10px;
-}
-
-.my_social_item {
-	margin-right: 10px;
-}
-
-.my_social_item:last-child{
-	margin-right: 0;
 }
 
 .my_social_item a {
@@ -116,24 +103,24 @@ header::after {
 }
 
 .fcb {
-  background: url(../img/social/facebook.svg);
-  background-size: 70px;
+  background: url(../img/social/facebook.svg) no-repeat 50% / 70px;
+  /* background-size: 70px;
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: 50%; */
 }
 
 .insta {
-  background: url(../img/social/instagram.svg);
-  background-size: 70px;
+  background: url(../img/social/instagram.svg) no-repeat 50% / 70px;
+  /* background-size: 70px;
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: 50%; */
 }
 
 .gith {
-  background: url(../img/social/my_page/git-repository-svgrepo-com.svg);
-  background-repeat: no-repeat;
+  background: url(../img/social/my_page/git-repository-svgrepo-com.svg) no-repeat 50% / 70px;
+  /* background-repeat: no-repeat;
   background-size: 70px;
-  background-position: 50%;
+  background-position: 50%; */
 }
 
 .home_work,
@@ -159,33 +146,33 @@ header::after {
 }
 li .home_btn {
   padding-left: 40px;
-  background: url(../img/nav/house-floor-svgrepo-com.svg);
-  background-repeat: no-repeat;
+  background: url(../img/nav/house-floor-svgrepo-com.svg) no-repeat 5% 50% / 30px;
+  /* background-repeat: no-repeat;
   background-size: 30px;
-  background-position: 5% 50%;
+  background-position: 5% 50%; */
 }
 li .gallery_btn {
   padding-left: 40px;
-  background: url(../img/nav/gallery-svgrepo-com.svg);
-  background-repeat: no-repeat;
+  background: url(../img/nav/gallery-svgrepo-com.svg) no-repeat 5% 50% / 30px;
+  /* background-repeat: no-repeat;
   background-size: 30px;
-  background-position: 5% 50%;
+  background-position: 5% 50%; */
 }
 
 li .hw_btn {
   padding-right: 40px;
-  background: url(../img/nav/arrow-down-svgrepo-com.svg);
-  background-repeat: no-repeat;
+  background: url(../img/nav/arrow-down-svgrepo-com.svg) no-repeat 95% 50% / 30px;
+  /* background-repeat: no-repeat;
   background-size: 30px;
-  background-position: 95% 50%;
+  background-position: 95% 50%; */
 }
 
 li .ly_btn {
   padding-left: 40px;
-  background: url(../img/nav/chevron-left-svgrepo-com.svg);
-  background-repeat: no-repeat;
+  background: url(../img/nav/chevron-left-svgrepo-com.svg) no-repeat 5% 50% / 30px;
+  /* background-repeat: no-repeat;
   background-size: 30px;
-  background-position: 5% 50%;
+  background-position: 5% 50%; */
 }
 
 .mp_nav_list_2 > li:not(:last-child) {
@@ -598,23 +585,23 @@ header p a {
 }
 
 .fcbk {
-  background: url(../img/social/facebook.svg);
-  background-size: 70px;
+  background: url(../img/social/facebook.svg) no-repeat 50% / 70px;
+  /* background-size: 70px;
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: 50%; */
 }
 
 .inst {
-  background: url(../img/social/instagram.svg);
-  background-size: 70px;
+  background: url(../img/social/instagram.svg) no-repeat 50% / 70px;
+  /* background-size: 70px;
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: 50%; */
 }
 .twit {
-  background: url(../img/social/twitter.svg);
-  background-size: 70px;
+  background: url(../img/social/twitter.svg) no-repeat 50% / 70px;
+  /* background-size: 70px;
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: 50%; */
 }
 
 .yout {
