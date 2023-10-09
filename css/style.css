@@ -97,7 +97,7 @@ header::after {
   display: block;
   text-decoration: none;
   color: inherit;
-  padding: 15px 10px;
+  padding: 10px 10px;
 }
 
 .my_social_item a {
@@ -126,7 +126,7 @@ header::after {
 .layouts > ul {
   position: absolute;
   text-wrap: nowrap;
-  line-height: 10px;
+  /* line-height: 10px; */
 }
 .home_work > ul {
   top: 100%;
@@ -138,30 +138,9 @@ header::after {
   right: 100%;
   text-align: center;
 }
-li .home_btn {
-  padding-left: 40px;
-  background: url(../img/nav/house-floor-svgrepo-com.svg) no-repeat 5% 50% /
-    30px;
- }
-li .gallery_btn {
-  padding-left: 40px;
-  background: url(../img/nav/gallery-svgrepo-com.svg) no-repeat 5% 50% / 30px;
- }
-
-li .hw_btn {
-  padding-right: 40px;
-  background: url(../img/nav/arrow-down-svgrepo-com.svg) no-repeat 95% 50% /
-    30px;
-}
-
-li .ly_btn {
-  padding-left: 40px;
-  background: url(../img/nav/chevron-left-svgrepo-com.svg) no-repeat 5% 50% /
-    30px;
- }
 
 .mp_nav_list_2 > li:not(:last-child) {
-  padding-left: 30px;
+  padding-left: 36px;
 }
 .mp_nav_list_2,
 .mp_nav_list_3 {
@@ -174,6 +153,16 @@ li .ly_btn {
 
 .layouts:hover ul {
   display: block;
+}
+
+.svg_btn{
+  width: 30px;
+  height: 30px;
+  vertical-align: bottom;
+ }
+
+.layouts .ly_btn{
+  padding-top: 0px;
 }
 
 /* ______________ GLOBAL______________________ */
@@ -460,10 +449,7 @@ header p a {
   align-items: center;
   margin-bottom: 80px;
 }
-/* .card > img {
-  object-fit: cover;
-  flex: 0 0 297px;
-} */
+
 .card picture {
   flex: 0 0 310px;
 }
@@ -607,6 +593,9 @@ header p a {
   border-radius: 100px;
 }
 
+
+/* __________________Gradient Content_______________ */
+
 .gradient_content {
   display: flex;
   justify-content: space-between;
@@ -649,3 +638,4 @@ header p a {
     yellow 20%
   );
 }
+
