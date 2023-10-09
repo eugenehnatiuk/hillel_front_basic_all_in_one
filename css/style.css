@@ -146,12 +146,13 @@ header::after {
 
 .home_work:hover .mp_nav_list_2 {
   top: 100%;
-  transition-duration: 1s;
+  transition: 1s ease-in-out;
+ 
 }
 
 .layouts:hover ul {
   right: 100%;
-  transition-duration: 1s;
+  transition: 1s ease-in-out;
 }
 
 /* ________________SVG_______________________ */
@@ -170,7 +171,7 @@ header::after {
   fill: white;
 }
 
-.svg_btn:hover{
+.svg_btn:hover {
   stroke: red;
   fill: red;
 }
