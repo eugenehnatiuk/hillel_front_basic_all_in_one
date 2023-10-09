@@ -155,6 +155,10 @@ header::after {
   display: block;
 }
 
+.svg_link{
+  display: flex;
+  align-items: center;
+}
 .svg_btn{
   width: 30px;
   height: 30px;
