@@ -90,14 +90,14 @@ header::after {
   outline: 1px solid white;
   border-radius: 6px;
   background: #373e98;
-  text-wrap: nowrap;
+  -webkit-text-wrap: nowrap
 }
 .nav_item a,
 .my_social_item a {
   display: block;
   text-decoration: none;
   color: inherit;
-  padding: 10px 10px;
+  padding: 15px 10px;
 }
 
 .my_social_item a {
@@ -110,12 +110,12 @@ header::after {
 
 .insta {
   background: url(../img/social/instagram.svg) no-repeat 50% / 70px;
- }
+}
 
 .gith {
   background: url(../img/social/my_page/git-repository-svgrepo-com.svg)
     no-repeat 50% / 70px;
-  }
+}
 
 .home_work,
 .layouts {
@@ -125,9 +125,9 @@ header::after {
 .home_work > ul,
 .layouts > ul {
   position: absolute;
-  text-wrap: nowrap;
-  /* line-height: 10px; */
+  -webkit-text-wrap: nowrap;
 }
+
 .home_work > ul {
   top: 100%;
   left: 0;
@@ -140,7 +140,7 @@ header::after {
 }
 
 .mp_nav_list_2 > li:not(:last-child) {
-  padding-left: 36px;
+  padding-left: 30px;
 }
 .mp_nav_list_2,
 .mp_nav_list_3 {
@@ -155,18 +155,18 @@ header::after {
   display: block;
 }
 
-.svg_link{
-  display: flex;
-  align-items: center;
+/* ________________SVG_______________________ */
+.nav_item .nav_btn {
+  position: relative;
+  padding-left: 40px;
 }
-.svg_btn{
+
+.svg_btn {
+  position: absolute;
+  top: 7px;
+  left: 6px;
   width: 30px;
   height: 30px;
-  vertical-align: bottom;
- }
-
-.layouts .ly_btn{
-  padding-top: 0px;
 }
 
 /* ______________ GLOBAL______________________ */
@@ -597,7 +597,6 @@ header p a {
   border-radius: 100px;
 }
 
-
 /* __________________Gradient Content_______________ */
 
 .gradient_content {
@@ -642,4 +641,3 @@ header p a {
     yellow 20%
   );
 }
-
