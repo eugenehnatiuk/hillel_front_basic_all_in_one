@@ -129,30 +129,29 @@ header::after {
 }
 
 .home_work > ul {
-  top: 100%;
+  top: -468%;
   left: 0;
 }
 
 .layouts > ul {
   top: 0;
-  right: 100%;
+  right: 0;
+  z-index: -10;
   text-align: center;
 }
 
 .mp_nav_list_2 > li:not(:last-child) {
   padding-left: 30px;
 }
-.mp_nav_list_2,
-.mp_nav_list_3 {
-  display: none;
-}
 
 .home_work:hover .mp_nav_list_2 {
-  display: block;
+  top: 100%;
+  transition-duration: 1s;
 }
 
 .layouts:hover ul {
-  display: block;
+  right: 100%;
+  transition-duration: 1s;
 }
 
 /* ________________SVG_______________________ */
@@ -167,6 +166,13 @@ header::after {
   left: 6px;
   width: 30px;
   height: 30px;
+  stroke: white;
+  fill: white;
+}
+
+.svg_btn:hover{
+  stroke: red;
+  fill: red;
 }
 
 /* ______________ GLOBAL______________________ */
