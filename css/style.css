@@ -90,7 +90,7 @@ header::after {
   outline: 1px solid white;
   border-radius: 6px;
   background: #373e98;
-  -webkit-text-wrap: nowrap
+  text-wrap: nowrap;
 }
 .nav_item a,
 .my_social_item a {
@@ -125,7 +125,7 @@ header::after {
 .home_work > ul,
 .layouts > ul {
   position: absolute;
-  -webkit-text-wrap: nowrap;
+  text-wrap: nowrap;
 }
 
 .home_work > ul {
