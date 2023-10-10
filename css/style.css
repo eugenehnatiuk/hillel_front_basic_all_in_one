@@ -38,6 +38,7 @@
   background: linear-gradient(180deg, #373e98 31%, #00d4ff);
   width: 100vw;
   height: 100vh;
+  /* padding-left: 200px; */
 }
 
 .mp_header {
@@ -126,6 +127,7 @@ header::after {
 .layouts > ul {
   position: absolute;
   text-wrap: nowrap;
+  transition: 1s ease-in-out;
 }
 
 .home_work > ul {
@@ -147,7 +149,6 @@ header::after {
 .home_work:hover .mp_nav_list_2 {
   top: 100%;
   transition: 1s ease-in-out;
- 
 }
 
 .layouts:hover ul {
@@ -171,14 +172,37 @@ header::after {
   fill: white;
 }
 
-.svg_btn:hover {
+.nav_item:hover > .nav_btn > svg,
+.nav_item:hover > .nav_btn,
+.layouts:hover > .nav_btn > svg,
+.mp_nav_list_2 > li a:hover {
+  color: red;
   stroke: red;
   fill: red;
 }
 
+/* ______________SIDEBAR_______________________ */
+.sidebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  background: rgb(189, 189, 189);
+}
+
+.sidebar_menu{
+  padding-top: 115px;
+
+}
+
+.sidebar_menu_item svg{
+  width: 30px;
+  height: 30px;
+}
 /* ______________ GLOBAL______________________ */
 .conteiner {
-  width: 1200px;
+  width: 1100px;
 }
 .p15_15 {
   padding: 15px 15px;
@@ -608,17 +632,20 @@ header p a {
 
 .gradient_content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 40px;
 }
 
 .gradient_content {
   padding-bottom: 50px;
 }
 .gradient_box {
-  flex: 0 0 300px;
-  height: 500px;
-  outline: 5px solid black;
+  position: relative;
+  flex: 0 0 200px;
+  height: 300px;
+  overflow: hidden;
 }
+
 .linear {
   background-image: repeating-linear-gradient(45deg, blue 5%, yellow 7%);
 }
@@ -638,7 +665,7 @@ header p a {
   left: 41%;
   z-index: 20;
   background-image: linear-gradient(45deg, blue, yellow);
-  transform: rotate(0.65turn);
+  transform: rotate(0.63turn);
 }
 
 .radial {
@@ -647,4 +674,84 @@ header p a {
     transparent 10%,
     yellow 20%
   );
+}
+
+.gradient_box_text{
+  padding: 3px;
+  color: white;
+}
+
+/* ____________Border-decoration_________________ */
+.border {
+  position: absolute;
+  background: linear-gradient(to right, #171618, #fcc23f);
+}
+.border_top {
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  animation: animate_border_top 3s linear infinite;
+}
+
+@keyframes animate_border_top {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.border_bottom {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  animation: animate_border_bottom 3s linear infinite;
+}
+
+@keyframes animate_border_bottom {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.border_left {
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  animation: animate_border_left 3s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animate_border_left {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.border_right {
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 3px;
+  animation: animate_border_right 3s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animate_border_right {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
 }
