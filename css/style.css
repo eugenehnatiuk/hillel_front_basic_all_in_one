@@ -38,7 +38,7 @@
   background: linear-gradient(180deg, #373e98 31%, #00d4ff);
   width: 100vw;
   height: 100vh;
-  /* padding-left: 200px; */
+  
 }
 
 .mp_header {
@@ -182,24 +182,107 @@ header::after {
 }
 
 /* ______________SIDEBAR_______________________ */
-.sidebar{
+.sidebar {
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
-  width: 200px;
+  width: 65px;
   background: rgb(189, 189, 189);
+  overflow: hidden;
+  transition: width 0.5s linear;
 }
 
-.sidebar_menu{
-  padding-top: 115px;
-
+.sidebar:hover {
+  width: 200px;
+  transition: width 0.5s ease;
 }
 
-.sidebar_menu_item svg{
-  width: 30px;
-  height: 30px;
+
+.sidebar_menu {
+  padding-top: 150px;
 }
+
+
+.sidebar_menu li {
+  padding: 0px 0px 20px 10px;
+}
+
+.item_box {
+  display: inline-block;
+  overflow: hidden; 
+  width: 45px;
+  height: 45px;
+  border: 2px solid #464455;
+  transition: .2s linear;
+  
+}
+
+.sidebar_menu_item svg {
+  width: 35px;
+  height: 35px;
+  transition: .2s linear;
+  margin: 4px;
+  stroke: #464455
+}
+
+/* .sidebar_menu_item a{
+  position: relative;
+} */
+
+/* .sidebar_menu_item a p{
+  position: absolute;
+  top: -9px;
+  left: 55px;
+} */
+
+.sidebar_menu_item a{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.item_box{
+  flex: 0 0 45px;
+}
+
+.sidebar_menu li a {
+  text-decoration: none;
+  color: #464455;
+
+}
+.sidebar_menu li a p {
+  text-decoration: none;
+  color: #464455;
+  font-size: 25px;
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.sidebar:hover .item_box {
+  transform:  rotate(45deg);
+  transition: .2s linear;
+}
+
+.sidebar:hover .item_box svg {
+  transform:  rotate(-45deg);
+  transition: .2s linear;
+}
+
+.sidebar_menu_item a:hover .item_box svg{
+  transform: scale(1.2) rotate(-45deg);
+  stroke-width: 2;
+  stroke: #ffff00;
+}
+
+.sidebar_menu_item a:hover p{
+   font-weight: 700;
+}
+
 /* ______________ GLOBAL______________________ */
 .conteiner {
   width: 1100px;
@@ -676,7 +759,7 @@ header p a {
   );
 }
 
-.gradient_box_text{
+.gradient_box_text {
   padding: 3px;
   color: white;
 }
