@@ -32,13 +32,171 @@
   font-style: normal;
   font-display: swap;
 }
+/* ______________SIDEBAR_______________________ */
+.wrapper {
+  padding-left: 65px;
+  transition: padding-left 0.5s linear;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 65px;
+  background: #bdbdbd;
+  overflow: hidden;
+  transition: width 0.5s linear;
+}
+
+.sidebar:hover {
+  width: 200px;
+  transition: width 0.5s ease;
+}
+
+.sidebar:hover + .wrapper {
+  padding-left: 200px;
+  transition: padding-left 0.5s linear;
+}
+
+.sidebar_menu {
+  padding-top: 150px;
+}
+
+.sidebar_menu li {
+  padding: 0px 0px 20px 10px;
+}
+
+.sidebar_menu_item a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.item_box {
+  flex: 0 0 45px;
+}
+
+.item_box {
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+  border: 2px solid #464455;
+  transition: transform 0.2s linear;
+}
+
+.sidebar_menu_item svg {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.2s linear;
+  margin: 4px;
+  stroke: #464455;
+}
+
+.sidebar_menu li a {
+  text-decoration: none;
+  color: #464455;
+}
+.sidebar_menu li a p {
+  text-decoration: none;
+  color: #464455;
+  font-size: 20px;
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.sidebar:hover .item_box {
+  transform: rotate(45deg);
+  transition: transform 0.2s linear;
+}
+
+.sidebar:hover .item_box svg {
+  transform: rotate(-45deg);
+  transition: transform 0.2s linear;
+}
+
+.sidebar_menu_item a:hover .item_box svg {
+  transform: scale(1.2) rotate(-45deg);
+  stroke-width: 2;
+  stroke: #ffff00;
+}
+
+.sidebar_menu_item a:hover p {
+  font-weight: 700;
+}
+/* ______________________POP UP_______________________ */
+.pop_up_menu {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) translateX(100%);
+  transition: transform 0.5s linear;
+  z-index: 100;
+}
+
+.pop_up_menu:hover {
+  transform: translateY(-50%) translateX(0);
+  transition: transform 0.5s linear;
+}
+
+.pop_up_menu:hover .gear svg {
+  animation-play-state: paused;
+}
+.pop_up_box {
+  position: relative;
+  padding: 30px 15px 30px 15px;
+  background-color: #bdbdbd;
+}
+
+.gear {
+  position: absolute;
+  top: 50%;
+  left: -35px;
+  margin-top: -17px;
+  display: inline-block;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  background: #8ee41e;
+}
+
+.gear svg {
+  width: 35px;
+  height: 35px;
+  animation: animate_gear 2s linear infinite;
+}
+
+@keyframes animate_gear {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.pop_up_list {
+  width: 100%;
+}
+.pop_up_list li:not(li:last-child) {
+  padding-bottom: 10px;
+}
+.pop_up_item a {
+  display: inline-block;
+  padding: 10px 10px;
+  background: #94e652;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #464455;
+}
 
 /* ______________ MAIN PAGE______________________ */
 .main_body {
   background: linear-gradient(180deg, #373e98 31%, #00d4ff);
   width: 100vw;
   height: 100vh;
-  
 }
 
 .mp_header {
@@ -176,111 +334,9 @@ header::after {
 .nav_item:hover > .nav_btn,
 .layouts:hover > .nav_btn > svg,
 .mp_nav_list_2 > li a:hover {
-  color: red;
-  stroke: red;
-  fill: red;
-}
-
-/* ______________SIDEBAR_______________________ */
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 65px;
-  background: rgb(189, 189, 189);
-  overflow: hidden;
-  transition: width 0.5s linear;
-}
-
-.sidebar:hover {
-  width: 200px;
-  transition: width 0.5s ease;
-}
-
-
-.sidebar_menu {
-  padding-top: 150px;
-}
-
-
-.sidebar_menu li {
-  padding: 0px 0px 20px 10px;
-}
-
-.item_box {
-  display: inline-block;
-  overflow: hidden; 
-  width: 45px;
-  height: 45px;
-  border: 2px solid #464455;
-  transition: .2s linear;
-  
-}
-
-.sidebar_menu_item svg {
-  width: 35px;
-  height: 35px;
-  transition: .2s linear;
-  margin: 4px;
-  stroke: #464455
-}
-
-/* .sidebar_menu_item a{
-  position: relative;
-} */
-
-/* .sidebar_menu_item a p{
-  position: absolute;
-  top: -9px;
-  left: 55px;
-} */
-
-.sidebar_menu_item a{
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-
-.item_box{
-  flex: 0 0 45px;
-}
-
-.sidebar_menu li a {
-  text-decoration: none;
-  color: #464455;
-
-}
-.sidebar_menu li a p {
-  text-decoration: none;
-  color: #464455;
-  font-size: 25px;
-  font-family: "Roboto Condensed";
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-
-.sidebar:hover .item_box {
-  transform:  rotate(45deg);
-  transition: .2s linear;
-}
-
-.sidebar:hover .item_box svg {
-  transform:  rotate(-45deg);
-  transition: .2s linear;
-}
-
-.sidebar_menu_item a:hover .item_box svg{
-  transform: scale(1.2) rotate(-45deg);
-  stroke-width: 2;
-  stroke: #ffff00;
-}
-
-.sidebar_menu_item a:hover p{
-   font-weight: 700;
+  color: yellow;
+  stroke: yellow;
+  fill: yellow;
 }
 
 /* ______________ GLOBAL______________________ */
